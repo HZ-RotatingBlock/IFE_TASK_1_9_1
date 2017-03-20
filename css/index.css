@@ -1,1 +1,142 @@
-
+*{
+	margin:0;
+	padding:0;
+	font-family:"黑体";
+	font-size:12px;
+	font-weight:500;
+	text-decoration:none;
+	color:#000;
+	list-style:none;
+}
+body{
+	background-color:#eeeeed;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+/*导航栏开始*/
+.nav{
+	position:relative;
+	margin-top:0;
+	width:100%;
+	height:56px;
+	background-color:#2289bf;
+}
+.logo{
+	position:absolute;
+	top:10px;
+	left:50px;
+	width:36px;
+	height:36px;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:0 0;
+	overflow:hidden;
+}
+.login{
+	position:absolute;
+	top:0px;
+	right:94px;
+	padding-left:35px;
+	padding-right:10px;
+	height:56px;
+	font-size:12px;
+	line-height:56px;
+	text-align:center;
+	color:#fff;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+.login:hover{
+	background-color:#2060a4;
+}
+span.login_img{
+	display:inline-block;
+	position:absolute;
+	top:20px;
+	left:10px;
+	width:15px;
+	height:15px;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:0 -46px;
+	overflow:hidden;
+}
+.searchbar{
+	position:absolute;
+	top:14px;
+	right:176px;
+	width:312px;
+	height:28px;
+	background-color:#fff;
+	border-radius:14px;
+}
+span.searchbar_img{
+	position:absolute;
+	top:6px;
+	left:13px;
+	width:16px;
+	height:16px;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:0 -73px;
+}
+input.searchbar_input{
+	position:absolute;
+	right:10px;
+	width:268px;
+	height:28px;
+	font-size:16px;
+	line-height:28px;
+	border:none;
+}
+/*导航栏结束*/
+/*主体开始*/
+/*侧边栏开始*/
+.sidebar{
+	position:relative;
+	margin-top:0px;
+	width:260px;
+	height:1210px;
+	background-color:#2a2e3d;
+}
+.sidebar_user{
+	position:absolute;
+	top:18px;
+	left:45px;
+	width:163px;
+	height:57px;
+}
+span.sidebar_user_img{
+	position:absolute;
+	top:0;
+	left:0;
+	width:57px;
+	height:57px;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:-47px 0;
+	overflow:hidden;
+}
+span.sidebar_user_name{
+	position:absolute;
+	top:22px;
+	right:0;
+	color:#fff;
+}
+.sidebar_collectAndFans{
+	position:absolute;
+	top:98px;
+	left:46px;
+	width:168px;
+	height:28px;
+	background-color:#999;
+}
+.sidebar_collect,.sidebar_fans{
+	position:absolute;
+	width:84px;
+	height:30px;
+}
+/*侧边栏结束*/
+/*主体结束*/
