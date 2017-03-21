@@ -131,12 +131,50 @@ span.sidebar_user_name{
 	left:46px;
 	width:168px;
 	height:28px;
-	background-color:#999;
 }
 .sidebar_collect,.sidebar_fans{
 	position:absolute;
 	width:84px;
-	height:30px;
+	height:35px;
+}
+.sidebar_collect span,.sidebar_fans span{
+	color:#6e8096;
+}
+.sidebar_collect{
+	top:0;
+	left:0;
+	border-right:1px solid #6e8096;
+}
+span.sidebar_collect_num{
+	display:block;
+	margin:0 29px;
+	font-size:16px;
+}
+span.sidebar_collect_name{
+	display:block;
+	margin:0 29px;
+	font-size:11px;
+}
+.sidebar_fans{
+	top:0;
+	right:0;
+}
+span.sidebar_fans_num{
+	display:block;
+	margin:0 29px;
+	font-size:16px;
+}
+span.sidebar_fans_name{
+	display:block;
+	margin:0 29px;
+	font-size:11px;
 }
 /*侧边栏结束*/
+/*主体内容开始*/
+/*路径提示开始*/
+
+
+/*路径提示开始*/
+/*主体内容开始*/
+
 /*主体结束*/
