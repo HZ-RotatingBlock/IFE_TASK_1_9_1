@@ -93,13 +93,22 @@ input.searchbar_input{
 }
 /*导航栏结束*/
 /*主体开始*/
+.main{
+	position:absolute;
+	top:56px;
+	width:100%;
+}
 /*侧边栏开始*/
 .sidebar{
+	display:block;
 	position:relative;
 	margin-top:0px;
-	width:260px;
+	margin-right:0;
+	width:20%;
+	min-width:260px;
 	height:1210px;
 	background-color:#2a2e3d;
+	z-index:99;
 }
 .sidebar_user{
 	position:absolute;
@@ -169,12 +178,240 @@ span.sidebar_fans_name{
 	margin:0 29px;
 	font-size:11px;
 }
+ul.sidebar_menu{
+	position:absolute;
+	top:150px;
+	left:0;
+	width:100%;
+	min-width:260px;
+}
+li.sidebar_menu_list{
+	display:inline-block;
+	width:100%;
+	min-width:260px;
+	height:44px;
+	transition:all 0.5s;
+	cursor:pointer;
+}
+li.sidebar_menu_list:hover{
+	background-color:#383d4e;
+}
+span.list_icon{
+	display:inline-block;
+	margin-left:18%;
+	margin-right:13px;
+	width:12px;
+	height:12px;
+	vertical-align:middle;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:-22px -100px;
+	overflow:hidden;
+}
+li.sidebar_menu_list:nth-child(1) span.list_icon{
+	background-position:-22px -100px;
+}
+li.sidebar_menu_list:nth-child(2) span.list_icon{
+	background-position:-22px -144px;
+}
+li.sidebar_menu_list:nth-child(3) span.list_icon{
+	background-position:-22px -144px;
+}
+li.sidebar_menu_list:nth-child(4) span.list_icon{
+	background-position:-22px -164px;
+}
+li.sidebar_menu_list:nth-child(5) span.list_icon{
+	background-position:-22px -144px;
+}
+li.sidebar_menu_list:nth-child(6) span.list_icon{
+	background-position:-22px -184px;
+}
+li.sidebar_menu_list:nth-child(1):hover span.sidebar_list_text{
+	color:#fff;
+}
+li.sidebar_menu_list:nth-child(2):hover span.sidebar_list_text{
+	color:#fff;
+}
+li.sidebar_menu_list:nth-child(3):hover span.sidebar_list_text{
+	color:#fff;
+}
+li.sidebar_menu_list:nth-child(4):hover span.sidebar_list_text{
+	color:#fff;
+}
+li.sidebar_menu_list:nth-child(5):hover span.sidebar_list_text{
+	color:#fff;
+}
+li.sidebar_menu_list:nth-child(6):hover span.sidebar_list_text{
+	color:#fff;
+}
+li.sidebar_menu_list:nth-child(1):hover span.list_icon{
+	background-position:-0 -100px;
+}
+li.sidebar_menu_list:nth-child(2):hover span.list_icon{
+	background-position:-0 -144px;
+}
+li.sidebar_menu_list:nth-child(3):hover span.list_icon{
+	background-position:-0 -144px;
+}
+li.sidebar_menu_list:nth-child(4):hover span.list_icon{
+	background-position:-0 -164px;
+}
+li.sidebar_menu_list:nth-child(5):hover span.list_icon{
+	background-position:-0 -144px;
+}
+li.sidebar_menu_list:nth-child(6):hover span.list_icon{
+	background-position:-0 -184px;
+}
+span.sidebar_list_text{
+	margin-left:2%;
+	font-size:12px;
+	line-height:44px;
+	color:#6e8096;
+}
 /*侧边栏结束*/
 /*主体内容开始*/
+.content{
+	position:absolute;
+	top:0;
+	left:20%;
+	width:80%;
+	min-width:890px;
+	height:1210px;
+	background-color:#eeeeed;
+}
 /*路径提示开始*/
+.content_path{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	min-width:890px;
+	height:30px;
+	background-color:#fff;
+}
+ul.content_path_ul{
+	position:absolute;
+	left:30px;
+}
+li.content_path_li{
+	float:left;
+	margin-left:13px;
+	height:30px;
+	font-size:12px;
+	line-height:30px;
+	color:#b9babe;
+	cursor:pointer;
+}
+li.content_path_li:last-child{
+	color:#2189bf;
+}
+/*路径提示结束*/
+/*文档内容开始*/
+.content_document{
+	position:relative;
+	margin:49px auto 0;
+	width:890px;
+	height:1006px;
+	background-color:#999;
+}
+/*筛选查询开始*/
+.content_document_seek{
+	position:relative;
+	margin-top:0;
+	width:888px;
+	height:84px;
+	background-color:#fff;
+	border:1px solid #eeeeed;
+	border-bottom:none;
+	box-shadow:0 2px 2px #eeeeed;
+}
+/*筛选查询结束*/
+/*历史查询开始*/
+.content_document_historySearch{
+	position:relative;
+	margin-top:9px;
+	width:888px;
+	height:64px;
+	background-color:#fff;
+}
+/*历史查询结束*/
+/*成交指示器开始*/
+ul.content_document_total{
+	margin-top:39px;
+	width:890px;
+	height:70px;
+}
+li.content_document_total_num{
+	float:left;
+	margin-right:27px;
+	width:200px;
+	height:70px;
+	background-color:#fff;
+	border:1px solid #eeeeed;
+}
+li.content_document_total_num:last-child{
+	margin-right:0;
+}
+/*成交指示器结束*/
+/*组项目部分开始*/
+.content_document_project,.content_document_bottom{
+	position:relative;
+	margin-top:13px;
+	width:890px;
+	height:355px;
+}
+.content_document_project_left_title,.content_document_project_right_title,.content_document_bottom_calendar_title,.content_document_bottom_ranking_title{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:39px;
+	font-size:11px;
+	line-height:39px;
+	color:#aaaaaa;
+	background-color:#f4f5f7;
+	border-bottom:1px solid #eeeeed;
+}
+.content_document_project_left,.content_document_project_right,.content_document_bottom_calendar,.content_document_bottom_ranking{
+	position:absolute;
+	top:0;
+	height:355px;
+	background-color:#fff;
+	border:1px solid #eeeeed;
+	border-radius:5px;
+}
+/*项目左栏开始*/
+.content_document_project_left{
+	left:0;
+	width:530px;
+}
+/*项目左栏结束*/
+/*项目右栏开始*/
+.content_document_project_right{
+	right:0;
+	width:350px;
+}
+/*项目右栏结束*/
+/*组项目部分结束*/
+/*内容底部开始*/
+/*内容底部_左部日历开始*/
+.content_document_bottom_calendar{
+	width:350px;
+	left:0;
+}
+/*内容底部_左部日历结束*/
+/*内容底部_右部品牌榜开始*/
+.content_document_bottom_ranking{
+	width:530px;
+	right:0;
+}
+/*内容底部_右部品牌榜结束*/
+
+/*内容底部结束*/
 
 
-/*路径提示开始*/
-/*主体内容开始*/
+/*文档内容结束*/
+
+/*主体内容结束*/
 
 /*主体结束*/
