@@ -90,6 +90,7 @@ input.searchbar_input{
 	font-size:16px;
 	line-height:28px;
 	border:none;
+	outline:none;
 }
 /*导航栏结束*/
 /*主体开始*/
@@ -187,9 +188,10 @@ ul.sidebar_menu{
 }
 li.sidebar_menu_list{
 	display:inline-block;
+	padding:16px 0;
 	width:100%;
 	min-width:260px;
-	height:44px;
+	height:12px;
 	transition:all 0.5s;
 	cursor:pointer;
 }
@@ -207,6 +209,12 @@ span.list_icon{
 	background-repeat:no-repeat;
 	background-position:-22px -100px;
 	overflow:hidden;
+}
+span.sidebar_list_text{
+	margin-left:2%;
+	font-size:12px;
+	line-height:12px;
+	color:#6e8096;
 }
 li.sidebar_menu_list:nth-child(1) span.list_icon{
 	background-position:-22px -100px;
@@ -262,12 +270,7 @@ li.sidebar_menu_list:nth-child(5):hover span.list_icon{
 li.sidebar_menu_list:nth-child(6):hover span.list_icon{
 	background-position:-0 -184px;
 }
-span.sidebar_list_text{
-	margin-left:2%;
-	font-size:12px;
-	line-height:44px;
-	color:#6e8096;
-}
+
 /*侧边栏结束*/
 /*主体内容开始*/
 .content{
@@ -324,6 +327,65 @@ li.content_path_li:last-child{
 	border:1px solid #eeeeed;
 	border-bottom:none;
 	box-shadow:0 2px 2px #eeeeed;
+}
+.content_document_seek_item,.content_document_seek_time,.content_document_seek_personnum{
+	display:block;
+	position:absolute;
+	width:120px;
+	height:25px;
+	font-size:11px;
+	line-height:25px;
+}
+.content_document_seek_get,.content_document_seek_sell,.content_document_date_item,.content_document_seek_deal{
+	display:block;
+	position:absolute;
+	width:160px;
+	height:25px;
+	font-size:11px;
+	line-height:25px;
+}
+.content_document_seek_item{
+	top:15px;
+	left:30px;
+}
+.content_document_seek_time{
+	top:15px;
+	left:582px;
+}
+.content_document_seek_personnum{
+	top:45px;
+	left:406px;
+}
+.content_document_seek_get{
+	top:15px;
+	left:188px;
+}
+.content_document_seek_sell{
+	top:45px;
+	left:188px;
+}
+.content_document_date_item{
+	top:15px;
+	left:406px;
+}
+.content_document_seek_deal{
+	top:45px;
+	left:531px;
+}
+.content_document_seek_searchbutton{
+	display:block;
+	position:absolute;
+	top:31px;
+	right:111px;
+	width:50px;
+	height:25px;
+	font-size:12px;
+	line-height:25px;
+	text-align:center;
+	color:#fff;
+	background-color:#388ac1;
+	border-radius:3px;
+	cursor:pointer;
 }
 /*筛选查询结束*/
 /*历史查询开始*/
