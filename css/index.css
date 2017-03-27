@@ -371,6 +371,7 @@ li.content_path_li:last-child{
 .content_document_seek_deal{
 	top:45px;
 	left:531px;
+	width:175px;
 }
 .content_document_seek_searchbutton{
 	display:block;
@@ -386,6 +387,26 @@ li.content_path_li:last-child{
 	background-color:#388ac1;
 	border-radius:2px;
 	cursor:pointer;
+}
+select.content_document_seek_item_list,select.content_document_seek_time_list,select.content_document_seek_personnum_list{
+	position:absolute;
+	top:0;
+	right:0;
+	width:68px;
+	height:23px;
+	outline:none;
+	border:none;
+	border:1px solid #eee;
+}
+select.content_document_seek_get_list,select.content_document_seek_sell_list,select.content_document_seek_date_list,select.content_document_seek_deal_list{
+	top:0;
+	right:0;
+	width:117px;
+	height:23px;
+	border:1px solid #eee;
+	border-left:1px solid #eee;
+	border-right:1px solid #eee;
+	outline:none;
 }
 /*筛选查询结束*/
 /*历史查询开始*/
