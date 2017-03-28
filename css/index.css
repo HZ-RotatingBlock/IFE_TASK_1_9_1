@@ -318,6 +318,16 @@ li.content_path_li:last-child{
 	background-color:#999;
 }
 /*筛选查询开始*/
+span.content_document_seek_exchange{
+	position:absolute;
+	top:23px;
+	left:348px;
+	width:28px;
+	height:38px;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:-156px 0;
+}
 .content_document_seek{
 	position:relative;
 	margin-top:0;
@@ -392,20 +402,22 @@ select.content_document_seek_item_list,select.content_document_seek_time_list,se
 	position:absolute;
 	top:0;
 	right:0;
-	width:68px;
+	width:67px;
 	height:23px;
 	outline:none;
 	border:none;
-	border:1px solid #eee;
+	border:1px solid #aaa;
+}
+select.content_document_seek_personnum_list{
+	right:11px
 }
 select.content_document_seek_get_list,select.content_document_seek_sell_list,select.content_document_seek_date_list,select.content_document_seek_deal_list{
 	top:0;
 	right:0;
 	width:117px;
 	height:23px;
-	border:1px solid #eee;
-	border-left:1px solid #eee;
-	border-right:1px solid #eee;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
 	outline:none;
 }
 /*筛选查询结束*/
@@ -415,7 +427,92 @@ select.content_document_seek_get_list,select.content_document_seek_sell_list,sel
 	margin-top:9px;
 	width:888px;
 	height:64px;
+}
+.content_document_historySearch_title{
+	position:absolute;
+	top:0;
+	right:-2px;
+	width:130px;
+	height:63px;
+	border-top:1px solid #aaa;
+	border-left:1px solid #aaa;
 	background-color:#fff;
+}
+span.content_document_historySearch_title_img{
+	position:absolute;
+	top:17px;
+	left:19px;
+	width:32px;
+	height:32px;
+	background-image:url(../icons/icons.png);
+	background-repeat:no-repeat;
+	background-position:-114px 0px;
+}
+p.content_document_historySearch_title_p{
+	position:absolute;
+	top:17px;
+	right:20px;
+	font-size:12px;
+	line-height:32px;
+}
+ul.content_document_historySearch_ul{
+	position:absolute;
+	top:0;
+	left:30px;
+	width:700px;
+	height:64px;
+	overflow:hidden;
+}
+li.content_document_historySearch_list{
+	display:inline-block;
+	float:left;
+	margin-left:5px;
+	position:relative;
+	width:109px;
+	height:63px;
+	background-color:#fff;
+	border-top:1px solid #aaa;
+	border-left:1px solid #aaa;
+}
+span.content_document_historySearch_listtime{
+	position:absolute;
+	top:14px;
+	left:29px;
+	font-size:12px;
+	line-height:12px;
+}
+span.money{
+	font-size:11px;
+	color:#aaa;
+}
+span.content_documebt_historySearch_listprice{
+	position:absolute;
+	top:36px;
+	left:27px;
+	font-size:16px;
+	line-height:16px;
+	color:#ed7326;
+}
+.content_document_historySearch_prev,.content_document_historySearch_next{
+	position:absolute;
+	width:29px;
+	height:63px;
+	font-size:17px;
+	line-height:63px;
+	text-align:center;
+	color:#aaa;
+	background-color:#fff;
+	border-top:1px solid #aaa;
+	border-left:1px solid #aaa;
+	cursor:pointer;
+}
+.content_document_historySearch_prev{
+	top:0;
+	left:0;
+}
+.content_document_historySearch_next{
+	top:0;
+	right:133px;
 }
 /*历史查询结束*/
 /*成交指示器开始*/
