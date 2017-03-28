@@ -632,6 +632,8 @@ span.content_document_total_num_volume{
 	color:#aaaaaa;
 	background-color:#f4f5f7;
 	border-bottom:1px solid #eeeeed;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
 }
 .content_document_project_left,.content_document_project_right,.content_document_bottom_calendar,.content_document_bottom_ranking{
 	position:absolute;
@@ -645,7 +647,72 @@ span.content_document_total_num_volume{
 .content_document_project_left{
 	left:0;
 	width:530px;
+	border-radius:5px;
 }
+.content_document_project_left_tab{
+        margin:60px auto;
+        width:488px;
+        background:#fff;
+    }
+    input,section{
+        display:none;
+        padding-top:10px;
+        clear:both;
+    }
+    section{
+        padding:28px 36px 32px;
+        border:1px solid #ddd;
+		border-bottom-right-radius:3px;
+		border-bottom-left-radius:3px;
+    }
+    label{
+        display:block;
+        float:left;
+        margin-right:5.5px;
+        margin-bottom:-1px;
+        width:90px;
+        height:27px;
+        font-size:11px;
+        line-height:27px;
+        text-align:center;
+        border-top:1px solid transparent;
+        border-right:1px solid transparent;
+        border-bottom:1px solid #ddd;
+        border-left:1px solid transparent;
+        background-color:#ededf0;
+        border-radius:3px;
+    }
+    label:hover{
+        background-color:#fff;
+        cursor:pointer;
+    }
+    #tab_1:checked ~ #content_document_project_left_tab_1,
+    #tab_2:checked ~ #content_document_project_left_tab_2,
+    #tab_3:checked ~ #content_document_project_left_tab_3,
+    #tab_4:checked ~ #content_document_project_left_tab_4,
+    #tab_5:checked ~ #content_document_project_left_tab_5{
+        display:block;
+    }
+    input:checked+label{
+        text-decoration:none;
+        border-top-color:#ddd;
+        border-right-color:#ddd;
+        border-bottom-color:#fff;
+        border-left-color:#ddd;
+        background-color:#fff;    
+    }
+    table{
+        margin:0 auto;
+        background-color:#ddd;
+    }
+    table td{
+        width:100px;
+        height:28px;
+        font-size:12px;
+        line-height:28px;
+        text-align:center;
+        background-color:#fff;
+    }
 /*项目左栏结束*/
 /*项目右栏开始*/
 .content_document_project_right{
