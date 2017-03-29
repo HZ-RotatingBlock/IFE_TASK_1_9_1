@@ -841,6 +841,116 @@ span.sheet_name{
 	width:350px;
 	left:0;
 }
+.content_document_bottom_calendar_detail{
+	position:relative;
+	margin:51px auto 0;
+	width:310px;
+	height:280px;
+}
+select.calendar_detail_select,.content_document_bottom_calendar_detail_reuturn{
+	position:absolute;
+	top:0;
+	width:62px;
+	height:20px;
+	border:1px solid #ddd;
+	outline:none;
+}
+select.calendar_detail_mouth{
+	position:absolute;
+	top:0;
+	left:70px;
+	width:83px;
+	height:20px;
+	border:1px solid #ddd;
+	outline:none;
+}
+select.calendar_detail_pointer{
+	position:absolute;
+	top:0;
+	left:161px;
+	width:73px;
+	height:20px;
+	border:1px solid #ddd;
+	outline:none;
+}
+.content_document_bottom_calendar_detail_reuturn{
+	top:0;
+	right:0;
+	width:62px;
+	height:18px;
+	font-size:12px;
+	line-height:18px;
+	text-align:center;
+	border:1px solid #ddd;
+	outline:none;
+	cursor:pointer;
+}
+span.calendar_detail_line{
+	display:block;
+	position:absolute;
+	top:33px;
+	left:0;
+	width:100%;
+	height:1px;
+	background-color:#a9cfec;
+}
+ul.content_document_bottom_calendar_detail_week{
+	position:absolute;
+	top:34px;
+	left:0;
+	width:100%;
+	height:29px;
+	border-bottom:1px solid #ddd;
+}
+li.calendar_detail_week_list{
+	float:left;
+	width:44.2px;
+	height:29px;
+	font-size:10px;
+	line-height:29px;
+	text-align:center;
+}
+ul.content_document_bottom_calendar_detail_date{
+	position:absolute;
+	top:63px;
+	left:0;
+	width:100%;
+}
+li.calendar_detail_date_list{
+	float:left;
+	position:relative;
+	width:42.2px;
+	height:42.2px;
+	font-size:10px;
+	line-height:30px;
+	text-align:center;
+	border:1px solid transparent;
+}
+li.calendar_detail_date_list:hover{
+	border-color:#f7d156;
+	cursor:pointer;
+}
+span.calendar_detail_date_list_datenum{
+	display:block;
+	position:absolute;
+	top:14px;
+	left:17px;
+	font-size:10px;
+	line-height:10px;
+	text-align:center;
+}
+span.calendar_detail_date_list_tra{
+	position:absolute;
+	top:26px;
+	left:0;
+	width:42.5px;
+	font-size:10px;
+	line-height:12px;
+	text-align:center;
+}
+.selected{
+	border-color:#f7d156 !important;
+}
 /*内容底部_左部日历结束*/
 /*内容底部_右部品牌榜开始*/
 .content_document_bottom_ranking{
