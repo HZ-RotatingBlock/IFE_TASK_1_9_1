@@ -973,6 +973,148 @@ span.calendar_detail_date_list_tra{
 	width:530px;
 	right:0;
 }
+table.content_document_bottom_raking_table{
+	position:relative;
+	margin:50px auto 0; 
+	width:448px;
+	height:296px;
+}
+table.content_document_bottom_raking_table tr,table.content_document_bottom_raking_table td{
+	height:25px;
+	line-height:25px;
+}
+table.content_document_bottom_raking_table tr{
+	width:100%;
+	height:25px;
+}
+.content_document_bottom_raking_table tr:hover td{
+	background-color:#f4f6f7 !important;
+}
+td.ranking_num{
+	width:66px;
+}
+td.ranking_brand{
+	width:90px;
+}
+td.ranking_index{
+	position:relative;
+	width:290px
+}
+span.ranking_index_num{
+	position:absolute;
+	top:6px;
+	left:35px;
+	font-size:9px;
+	line-height:9px;
+}
+.ranking_index_num_line{
+	display:block;
+	position:absolute;
+	top:8px;
+	left:104px;
+	width:167px;
+	height:4px;
+	background-color:#ddd;
+}
+span.ranking_index_num_line_rate{
+	position:absolute;
+	top:0;
+	left:0;
+	width:auto;
+	height:4px;
+	/*animation-fill-mode:forwards;规定动画在播放之前或之后，其动画效果是否可见*/
+	/*animation-direction:alternate;动画轮流反向播放*/
+}
+span.dazhong{
+	background-color:#ec6d51;
+	animation:dazhong 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.fengtian{
+	background-color:#ef8150;
+	animation:fengtian 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.aodi{
+	background-color:#f19f4f;
+	animation:aodi 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.bentian{
+	background-color:#7fcbf0;
+	animation:bentian 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.fute{
+	background-color:#7ecaf0;
+	animation:fute 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.baoma{
+	background-color:#7fcbf0;
+	animation:baoma 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.xiandai{
+	background-color:#7fcbf0;
+	animation:xiandai 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.qiya{
+	background-color:#7fcbf0;
+	animation:qiya 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.benchi{
+	background-color:#7fcbf0;
+	animation:benchi 2s ease-out;
+	animation-fill-mode:forwards;
+}
+span.bieke{
+	background-color:#7fcbf0;
+	animation:bieke 2s ease-out;
+	animation-fill-mode:forwards;
+}
+@keyframes dazhong{
+	0%{width:0;}
+	100%{width:99%;}
+}
+@keyframes fengtian{
+	0%{width:0;}
+	100%{width:88%;}
+}
+@keyframes aodi{
+	0%{width:0;}
+	100%{width:77%;}
+}
+@keyframes bentian{
+	0%{width:0;}
+	100%{width:66%;}
+}
+@keyframes fute{
+	0%{width:0;}
+	100%{width:55%;}
+}
+@keyframes baoma{
+	0%{width:0;}
+	100%{width:44%;}
+}
+@keyframes xiandai{
+	0%{width:0;}
+	100%{width:33%;}
+}
+@keyframes qiya{
+	0%{width:0;}
+	100%{width:22%;}
+}
+@keyframes benchi{
+	0%{width:0;}
+	100%{width:11%;}
+}
+@keyframes bieke{
+	0%{width:0;}
+	100%{width:10%;}
+}
 /*内容底部_右部品牌榜结束*/
 
 /*内容底部结束*/
