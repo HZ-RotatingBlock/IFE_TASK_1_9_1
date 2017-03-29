@@ -926,6 +926,22 @@ li.calendar_detail_date_list{
 	text-align:center;
 	border:1px solid transparent;
 }
+li.calendar_detail_date_list:nth-child(6) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(7) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(13) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(14) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(20) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(21) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(27) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(28) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(34) span.calendar_detail_date_list_datenum,
+li.calendar_detail_date_list:nth-child(35) span.calendar_detail_date_list_datenum{
+	color:red;
+}
+li.calendar_detail_date_list:nth-child(5) span.calendar_detail_date_list_tra,
+li.calendar_detail_date_list:nth-child(9) span.calendar_detail_date_list_tra{
+	color:red;
+}
 li.calendar_detail_date_list:hover{
 	border-color:#f7d156;
 	cursor:pointer;
